@@ -1,4 +1,5 @@
 [![Go](https://github.com/burakdenizz/getirAssignment/actions/workflows/go.yml/badge.svg)](https://github.com/burakdenizz/getirAssignment/actions/workflows/go.yml)
+
 This is a simple two end point backend service for getir case study
 
 
