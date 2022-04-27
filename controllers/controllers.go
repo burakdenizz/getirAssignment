@@ -39,7 +39,6 @@ func GetData(w http.ResponseWriter, r *http.Request) {
 		endDate, endDateError := time.Parse("2006-01-02", rawFilter["endDate"])
 		gte, _ := strconv.Atoi(rawFilter["gte"])
 		lte, _ := strconv.Atoi(rawFilter["lte"])
-		fmt.Println(gte, lte)
 		if startDateError != nil || endDateError != nil {
 			w.WriteHeader(http.StatusBadRequest)
 			w.Write([]byte("Date input is wrong please input date like this : 2006-12-30"))
