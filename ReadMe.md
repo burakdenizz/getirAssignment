@@ -1,3 +1,4 @@
+[![Go](https://github.com/burakdenizz/getirAssignment/actions/workflows/go.yml/badge.svg)](https://github.com/burakdenizz/getirAssignment/actions/workflows/go.yml)
 This is a simple two end point backend service for getir case study
 
 
@@ -22,7 +23,7 @@ This is a simple two end point backend service for getir case study
     - An example curl can be found below
     - ```bash
       curl --location --request POST 'http://127.0.0.1:8000/api/in-memory' --header 'Content-Type: application/json' --data-raw '{"key": "Hello","value": "World"}'
-     ```    
+      ```
 - ## Get Data From Mongo DB
    - A function for getting the data from mongo db using two filters
    - The first filter is filters the data according to the date it is created. 
