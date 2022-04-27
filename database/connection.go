@@ -2,7 +2,6 @@ package database
 
 import (
 	"context"
-	"fmt"
 	"getirAssignment/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -52,6 +51,5 @@ func FetchAllData(cursor *mongo.Cursor) (result []models.Record) {
 	if err := cursor.All(ctx, &result); err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Println(result)
 	return
 }
